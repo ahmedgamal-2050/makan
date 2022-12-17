@@ -43,7 +43,9 @@
                             <img class="user-icon" src="./assets/images/user-icon.svg">
                             الدخول او تسجيل حساب
                         </button>
-                        <button class="btn-makan btn-outline-main">
+                        <button class="btn-makan btn-outline-main" 
+                            data-bs-toggle="modal"
+                            data-bs-target="#welcomeModal">
                             أضف عقارك
                         </button>
                     </div>
@@ -562,6 +564,68 @@
             </div>
         </section>
     </main>
+    
+    <!-- Welcome Modal -->
+    <div class="modal fade modal-custom" id="welcomeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="./assets/images/Icon-close.svg" alt="close icon" />
+                </button>
+                <div class="modal-body py-4">
+                    <h5 class="text-center text-dark fw-bold mb-3">أهلاً بك!</h5>
+                    <h4 class="text-center text-second fw-bold mb-4">ماهر البوعلي</h4>
+                    <p class="small text-gray mb-5 lh-2">
+                        تعتبر منصة مكان بموقعها الإلكتروني وتطبيقاتها أحد منصات حجز وحدات الإيواء السياحي بالمملكة العربية السعودية والتي تتيح
+                        لمالك العقار السكني أوالسياحي (المضيف) عرض عقاره وايجاره للضيوف والسياح للإقامة والإنتفاع السياحي. تعتبر منصتنا من
+                        المنصات الذكية التي تتيح لمالك العقار في منصته قراءة وفهم العديد من الأحصائيات الدورية والبيانات التحليليه لعقاره. من
+                        خلال منصة مالك العقار الخاصه يمكن له التنبئو السمتقبلي عن مسار عقاره في المنصة والسوق عامة وبالتالي اتخاذ قرارات
+                        وتعديلات على الأسعار وفقاً لمعايير عدة ومنها الطلب الملح في مواسم معينة من السنة وتجربة الضيف وتقييمات الضيوف
+                        وتعليقاتهم.
+                    </p>
+                    <div class="text-center">
+                        <button type="button" 
+                            class="btn btn-main rounded-3 px-4 mb-3"
+                            data-bs-toggle="modal"
+                            data-bs-dismiss="modal"
+                            data-bs-target="#instructionModal">
+                            التالي
+                        </button>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Instruction Modal -->
+    <div class="modal fade modal-custom" id="instructionModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="./assets/images/Icon-close.svg" alt="close icon" />
+                </button>
+                <div class="modal-body py-4">
+                    <h5 class="text-second fw-bold mb-4">
+                        الرجاء قراءة التعليمات الآتية قبل البدء بتعبئة النموذج
+                    </h5>
+                    <p class="small text-gray mb-5 lh-2">
+                        تعتبر منصة مكان بموقعها الإلكتروني وتطبيقاتها أحد منصات حجز وحدات الإيواء السياحي بالمملكة العربية السعودية والتي تتيح
+                        لمالك العقار السكني أوالسياحي (المضيف) عرض عقاره وايجاره للضيوف والسياح للإقامة والإنتفاع السياحي. تعتبر منصتنا من
+                        المنصات الذكية التي تتيح لمالك العقار في منصته قراءة وفهم العديد من الأحصائيات الدورية والبيانات التحليليه لعقاره. من
+                        خلال منصة مالك العقار الخاصه يمكن له التنبئو السمتقبلي عن مسار عقاره في المنصة والسوق عامة وبالتالي اتخاذ قرارات
+                        وتعديلات على الأسعار وفقاً لمعايير عدة ومنها الطلب الملح في مواسم معينة من السنة وتجربة الضيف وتقييمات الضيوف
+                        وتعليقاتهم.
+                    </p>
+                    <div class="text-center">
+                        <button type="button" 
+                            class="btn btn-main rounded-3 px-4 mb-3">
+                            التالي
+                        </button>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <section class="main-footer bg-dark text-white py-4">
