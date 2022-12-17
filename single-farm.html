@@ -1215,7 +1215,11 @@
                                     </div>
                                 </div>
                                 <div class="row justify-content-center pt-4">
-                                    <button type="button" class="col-auto btn btn-sm px-lg-3 px-2 rounded-pill btn-outline-dark-2">
+                                    <button type="button" 
+                                        class="col-auto btn btn-sm px-lg-3 px-2 rounded-pill btn-outline-dark-2"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#ratingModal"
+                                    >
                                         <span class="ms-1">مشاهدة الكل</span>
                                         <img
                                             src="./assets/images/farm-icons/arrow-left.svg"
@@ -1549,6 +1553,275 @@
             </div>
         </section>
     </main>
+
+    <!-- Rating Modal -->
+    <div class="modal fade modal-custom" id="ratingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="./assets/images/Icon-close.svg" alt="close icon" />
+                </button>
+                <div class="modal-body">
+                    <div class="table-responsive border-bottom pb-4">
+                        <table class="table table-borderless table-layout-fixed">
+                            <tbody>
+                                <!-- Title -->
+                                <tr class="small text-gray">
+                                    <td>التقييم العام (42 تقييم)</td>
+                                    <td>تطابق مواصفات المكان بالواقع</td>
+                                    <td>النظافة</td>
+                                    <td>الخدمة</td>
+                                    <td>حالة المكان</td>
+                                    <td>الجودة مقابل السعر</td>
+                                </tr>
+                                <!-- content -->
+                                <tr>
+                                    <td>
+                                        <span class="d-inline-block bg-main p-1 text-center rounded-3 text-white fw-bold">
+                                            8.4
+                                        </span>
+                                        <span class="text-gray-2 me-1">ممتاز</span>
+                                    </td>
+                                    <td>
+                                        <span class="d-inline-block border border-gray-2 p-1 text-center rounded-3 text-gray-2 fw-bold">
+                                            9.4
+                                        </span>
+                                        <span class="text-gray-2 me-1">ممتاز</span>
+                                    </td>
+                                    <td>
+                                        <span class="d-inline-block border border-gray-2 p-1 text-center rounded-3 text-gray-2 fw-bold">
+                                            9.4
+                                        </span>
+                                        <span class="text-gray-2 me-1">ممتاز</span>
+                                    </td>
+                                    <td>
+                                        <span class="d-inline-block border border-gray-2 p-1 text-center rounded-3 text-gray-2 fw-bold">
+                                            9.4
+                                        </span>
+                                        <span class="text-gray-2 me-1">ممتاز</span>
+                                    </td>
+                                    <td>
+                                        <span class="d-inline-block border border-gray-2 p-1 text-center rounded-3 text-gray-2 fw-bold">
+                                            7.2
+                                        </span>
+                                        <span class="text-gray-2 me-1">جيد</span>
+                                    </td>
+                                    <td>
+                                        <span class="d-inline-block border border-gray-2 p-1 text-center rounded-3 text-gray-2 fw-bold">
+                                            6.5
+                                        </span>
+                                        <span class="text-gray-2 me-1">مرضي</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row align-items-center pt-4">
+                        <div class="col-md-4 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="./assets/images/farm-icons/profile-pic-placeholder.svg" alt="profile pic placeholder"
+                                        title="profile pic placeholder" class="reviwer-profile-pic of-cover" />
+                                </div>
+                                <div class="col text-dark-2">
+                                    <div class="fw-bold">بسمة بن راشد</div>
+                                    <div>الجمعة, 22 يوليو</div>
+                                </div>
+                            </div>
+                            <div class="small text-dark-2 py-2">
+                                <img src="./assets/images/farm-icons/star.svg" class="" title="star" alt="star" />
+                                <span>ممتاز</span>
+                                <span class="fw-bold px-1">8.4</span>
+                            </div>
+                            <div class="small text-gray">
+                                ان دنو المحيط ويكيبيديا, أما أي ليركز الشمال. ذلك عل ونتج وانهاء ولاتّساع, بقعة الشمال الأرضية خطّة الجوي.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="./assets/images/farm-icons/profile-pic-placeholder.svg" alt="profile pic placeholder"
+                                        title="profile pic placeholder" class="reviwer-profile-pic of-cover" />
+                                </div>
+                                <div class="col text-dark-2">
+                                    <div class="fw-bold">لؤي عبد الله</div>
+                                    <div>الجمعة, 22 يوليو</div>
+                                </div>
+                            </div>
+                            <div class="small text-dark-2 py-2">
+                                <img src="./assets/images/farm-icons/star.svg" class="" title="star" alt="star" />
+                                <span>ممتاز</span>
+                                <span class="fw-bold px-1">8.4</span>
+                            </div>
+                            <div class="small text-gray">
+                                ان دنو المحيط ويكيبيديا, أما أي ليركز الشمال. ذلك عل ونتج وانهاء ولاتّساع, بقعة الشمال الأرضية خطّة الجوي.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="./assets/images/farm-icons/profile-pic-placeholder.svg" alt="profile pic placeholder"
+                                        title="profile pic placeholder" class="reviwer-profile-pic of-cover" />
+                                </div>
+                                <div class="col text-dark-2">
+                                    <div class="fw-bold">سارة أحمد</div>
+                                    <div>الجمعة, 22 يوليو</div>
+                                </div>
+                            </div>
+                            <div class="small text-dark-2 py-2">
+                                <img src="./assets/images/farm-icons/star.svg" class="" title="star" alt="star" />
+                                <span>ممتاز</span>
+                                <span class="fw-bold px-1">8.4</span>
+                            </div>
+                            <div class="small text-gray">
+                                ان دنو المحيط ويكيبيديا, أما أي ليركز الشمال. ذلك عل ونتج وانهاء ولاتّساع, بقعة الشمال الأرضية خطّة الجوي.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="./assets/images/farm-icons/profile-pic-placeholder.svg" alt="profile pic placeholder"
+                                        title="profile pic placeholder" class="reviwer-profile-pic of-cover" />
+                                </div>
+                                <div class="col text-dark-2">
+                                    <div class="fw-bold">بسمة بن راشد</div>
+                                    <div>الجمعة, 22 يوليو</div>
+                                </div>
+                            </div>
+                            <div class="small text-dark-2 py-2">
+                                <img src="./assets/images/farm-icons/star.svg" class="" title="star" alt="star" />
+                                <span>ممتاز</span>
+                                <span class="fw-bold px-1">8.4</span>
+                            </div>
+                            <div class="small text-gray">
+                                ان دنو المحيط ويكيبيديا, أما أي ليركز الشمال. ذلك عل ونتج وانهاء ولاتّساع, بقعة الشمال الأرضية خطّة الجوي.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="./assets/images/farm-icons/profile-pic-placeholder.svg" alt="profile pic placeholder"
+                                        title="profile pic placeholder" class="reviwer-profile-pic of-cover" />
+                                </div>
+                                <div class="col text-dark-2">
+                                    <div class="fw-bold">لؤي عبد الله</div>
+                                    <div>الجمعة, 22 يوليو</div>
+                                </div>
+                            </div>
+                            <div class="small text-dark-2 py-2">
+                                <img src="./assets/images/farm-icons/star.svg" class="" title="star" alt="star" />
+                                <span>ممتاز</span>
+                                <span class="fw-bold px-1">8.4</span>
+                            </div>
+                            <div class="small text-gray">
+                                ان دنو المحيط ويكيبيديا, أما أي ليركز الشمال. ذلك عل ونتج وانهاء ولاتّساع, بقعة الشمال الأرضية خطّة الجوي.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="./assets/images/farm-icons/profile-pic-placeholder.svg" alt="profile pic placeholder"
+                                        title="profile pic placeholder" class="reviwer-profile-pic of-cover" />
+                                </div>
+                                <div class="col text-dark-2">
+                                    <div class="fw-bold">سارة أحمد</div>
+                                    <div>الجمعة, 22 يوليو</div>
+                                </div>
+                            </div>
+                            <div class="small text-dark-2 py-2">
+                                <img src="./assets/images/farm-icons/star.svg" class="" title="star" alt="star" />
+                                <span>ممتاز</span>
+                                <span class="fw-bold px-1">8.4</span>
+                            </div>
+                            <div class="small text-gray">
+                                ان دنو المحيط ويكيبيديا, أما أي ليركز الشمال. ذلك عل ونتج وانهاء ولاتّساع, بقعة الشمال الأرضية خطّة الجوي.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="./assets/images/farm-icons/profile-pic-placeholder.svg" alt="profile pic placeholder"
+                                        title="profile pic placeholder" class="reviwer-profile-pic of-cover" />
+                                </div>
+                                <div class="col text-dark-2">
+                                    <div class="fw-bold">بسمة بن راشد</div>
+                                    <div>الجمعة, 22 يوليو</div>
+                                </div>
+                            </div>
+                            <div class="small text-dark-2 py-2">
+                                <img src="./assets/images/farm-icons/star.svg" class="" title="star" alt="star" />
+                                <span>ممتاز</span>
+                                <span class="fw-bold px-1">8.4</span>
+                            </div>
+                            <div class="small text-gray">
+                                ان دنو المحيط ويكيبيديا, أما أي ليركز الشمال. ذلك عل ونتج وانهاء ولاتّساع, بقعة الشمال الأرضية خطّة الجوي.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="./assets/images/farm-icons/profile-pic-placeholder.svg" alt="profile pic placeholder"
+                                        title="profile pic placeholder" class="reviwer-profile-pic of-cover" />
+                                </div>
+                                <div class="col text-dark-2">
+                                    <div class="fw-bold">لؤي عبد الله</div>
+                                    <div>الجمعة, 22 يوليو</div>
+                                </div>
+                            </div>
+                            <div class="small text-dark-2 py-2">
+                                <img src="./assets/images/farm-icons/star.svg" class="" title="star" alt="star" />
+                                <span>ممتاز</span>
+                                <span class="fw-bold px-1">8.4</span>
+                            </div>
+                            <div class="small text-gray">
+                                ان دنو المحيط ويكيبيديا, أما أي ليركز الشمال. ذلك عل ونتج وانهاء ولاتّساع, بقعة الشمال الأرضية خطّة الجوي.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="./assets/images/farm-icons/profile-pic-placeholder.svg" alt="profile pic placeholder"
+                                        title="profile pic placeholder" class="reviwer-profile-pic of-cover" />
+                                </div>
+                                <div class="col text-dark-2">
+                                    <div class="fw-bold">سارة أحمد</div>
+                                    <div>الجمعة, 22 يوليو</div>
+                                </div>
+                            </div>
+                            <div class="small text-dark-2 py-2">
+                                <img src="./assets/images/farm-icons/star.svg" class="" title="star" alt="star" />
+                                <span>ممتاز</span>
+                                <span class="fw-bold px-1">8.4</span>
+                            </div>
+                            <div class="small text-gray">
+                                ان دنو المحيط ويكيبيديا, أما أي ليركز الشمال. ذلك عل ونتج وانهاء ولاتّساع, بقعة الشمال الأرضية خطّة الجوي.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pagination -->
+                    <nav class="farm-list-pagination mt-4">
+                        <ul class="pagination justify-content-between">
+                            <li class="page-item">
+                                <a class="page-link rounded-3" href="javascript:void(0)">
+                                    <em class="fas fa-chevron-right small" aria-hidden="true"></em>
+                                    <span>التالي</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link rounded-circle" href="javascript:void(0)">1</a></li>
+                            <li class="page-item"><a class="page-link rounded-circle" href="javascript:void(0)">2</a></li>
+                            <li class="page-item"><a class="page-link rounded-circle" href="javascript:void(0)">3</a></li>
+                            <li class="page-item disabled">
+                                <a class="page-link rounded-3">
+                                    <span>السابق</span>
+                                    <em class="fas fa-chevron-left small" aria-hidden="true"></em>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <section class="main-footer bg-dark text-white py-4">
