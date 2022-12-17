@@ -243,6 +243,10 @@ select:focus {
   font-size: 0.65rem;
 }
 
+#accordion_offcanvas .accordion-item:not(:first-of-type) {
+  border-top: 1px solid rgba(0, 0, 0, .125) !important;
+}
+
 .accordion-button:not(.collapsed) {
   color: var(--m-dark-2);
   background-color: #fff;
