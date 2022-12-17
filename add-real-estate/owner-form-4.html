@@ -43,8 +43,13 @@
       type="text/css"
       media="all"
     />
+    <!--select 2-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="../assets/styles/styles.css" />
   </head>
 
   <body>
@@ -53,9 +58,9 @@
       <section class="upper-header d-flex justify-content-between">
         <div class="mx-lg-5 mx-md-4 mx-3 w-100">
           <div class="row justify-content-between align-items-center my-4">
-            <div class="col-auto text-center">
+            <div class="col-md-auto text-center">
               <p class="mb-2 small text-gray">Book-Makan.com</p>
-              <img class="logo" src="./assets/images/makan-new-logo.png" />
+              <img class="logo" src="../assets/images/makan-new-logo.png" />
             </div>
             <div class="col px-5">
               <div class="bg-white p-4 shadow rounded-3">
@@ -87,9 +92,9 @@
                 </nav>
               </div>
             </div>
-            <div class="col-auto d-flex flex-column">
+            <div class="col-md-auto d-flex flex-column">
               <button class="btn-makan btn-main mb-2">
-                <img class="user-icon" src="./assets/images/user-icon.svg" />
+                <img class="user-icon" src="../assets/images/user-icon.svg" />
                 الدخول او تسجيل حساب
               </button>
               <button class="btn-makan btn-outline-main">أضف عقارك</button>
@@ -113,53 +118,142 @@
                   <em class="fas fa-home text-gray"></em>
                 </a>
               </li>
+              <li class="breadcrumb-item">
+                <a class="text-dark-2" href="javascript:void(0)"> اضف عقارك </a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="text-dark-2" href="javascript:void(0)">
+                  مالك الايواء السياحى
+                </a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="text-dark-2" href="javascript:void(0)">
+                  بيانات الإيواء السياحي
+                </a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="text-dark-2" href="javascript:void(0)">
+                  مواصفات الإيواء السياحي
+                </a>
+              </li>
               <li class="breadcrumb-item text-main" aria-current="page">
-                الأسئلة الشائعة
+                صور الإيواء السياحي
               </li>
             </ol>
           </nav>
         </div>
       </section>
 
-      <!-- Others Card List -->
       <section class="mb-4">
         <div class="container">
           <div class="card p-5 rounded-3">
             <div class="row">
-              <div class="col-12 mb-2">
+              <div class="col-md-12 mb-2">
                 <!-- Title -->
                 <h3 class="fw-bold text-second text-center owner-title">
-                    الأسئلة الشائعة
+                  صور الإيواء السياحي
                 </h3>
               </div>
-              <div class="col-12 my-3">
-                <div class="accordion" id="accordionExample">
-                        <div class="accordion-item faq-item mt-3">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-ماهي طرق الدفع المتوفرة لدى مكان؟                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body text-second"> هناك طريقتين للدفع أما عن طريق الموقع باستخدام البطاقة البنكية أو الدفع نقداً للمضيف عند الوصول</div>
-                            </div>
-                        </div>
-                       <div class="accordion-item faq-item mt-3">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-ماهي طرق الدفع المتوفرة لدى مكان؟                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body text-second"> هناك طريقتين للدفع أما عن طريق الموقع باستخدام البطاقة البنكية أو الدفع نقداً للمضيف عند الوصول</div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="col-md-12 my-4">
+                <h5 class="text-second text-right owner-frm-title">الوصف</h5>
               </div>
             </div>
-        
-         
+            <div class="row">
+              <div class="col-md-4">
+                <div class="frm-txt images-desc-title">
+                  اكتب وصفاً مختصر وملائم للإيواء السياحي موضح فيه أبرز المرافق
+                  الجاذبة والمزايا والخدمات
+                </div>
+              </div>
+              <div class="col-md-8">
+                <textarea
+                  rows="6"
+                  class="images-desc"
+                  placeholder="من فضلك اكتب الوصف هنا "
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 my-4">
+                <h5 class="text-second text-right owner-frm-title">الصور</h5>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="frm-txt mb-3">
+                  قبل إضافة الصور أقراء التعليمات أدناه
+                </div>
+                <ul class="ul-images-desc">
+                  <li>يفضل أضافة الصور العرضية وليست الطولية</li>
+                  <li>يجب خلو الصور من العبارات أو الشعارات</li>
+                  <li>امتداد الصور يجب أن يكون من نوع PNG – JPG – JPEG</li>
+                  <li>يفضل إضافة ما لا يقل عن 12 صورة</li>
+                  <li>
+                    كلما كانت الصورة عالية الوضوح وجذابه كلما زادت فرصة ترشيح
+                    الإيواء السياحي للضيوف أثناء البحث
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-8 mb-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="wrapper-images">
+                      <div
+                        class="wrapper-content control-group file-upload"
+                        id="file-upload1"
+                      >
+                        <div class="image-box">
+                          <div class="content-box text-center">
+                            <div>
+                              <i class="fas fa-images"></i>
+                              <div class="d-flex align-items-center">
+                                <i class="fas fa-camera"></i>
+                                <p>صورة العرض الرئيسية</p>
+                              </div>
+                            </div>
+                          </div>
+                          <img src="" alt="" />
+                        </div>
+                        <div class="controls" style="display: none">
+                          <input type="file" name="contact_image_1" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="wrapper-sub-images"></div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="wrapper-sub-images"></div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="wrapper-sub-images"></div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="wrapper-sub-images"></div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="images-info">
+                        <i class="fas fa-info-circle"></i>
+                        <span>كلما كانت الصورة عالية الوضوح وجذابه كلما زادت فرصة ترشيح الإيواء السياحي للضيوف أثناء البحث</span>
+                    </div>
+                    <div class="images-info">
+                      <i class="fas fa-info-circle"></i>
+                      <span>امتداد الصور يجب أن يكون من نوع (PNG – JPG – JPEG)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        
-           
+            <div class="row">
+              <div class="col-md-12 d-flex justify-content-center">
+                <div class="d-flex justify-content-around btns-w-frm">
+                  <div type="button" class="bg-main btn-frm-owner">  <a href="owner-form-5.html">التالى</a></div>
+                  <div type="button" class="bg-light-gray btn-frm-owner-light">
+                    <a href="owner-form-3.html">السابق</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -170,7 +264,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-auto col-md-6 col-sm-12 ps-5">
-              <img class="logo mt-5" src="./assets/images/makan-new-logo.png" />
+              <img class="logo mt-5" src="../assets/images/makan-new-logo.png" />
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -196,7 +290,7 @@
               </ul>
             </div>
 
-            <div class="col-lg col-md-6 col-sm-12">
+            <div class="col-md-lg col-md-6 col-sm-12">
               <h5 class="mb-5">روابط هامه</h5>
 
               <ul class="nav">
@@ -224,7 +318,7 @@
               </ul>
             </div>
 
-            <div class="col-lg col-md-6 col-sm-12">
+            <div class="col-md-lg col-md-6 col-sm-12">
               <h5 class="mb-5">أحصل علي أحدث العروض</h5>
 
               <div class="d-flex mb-3">
@@ -290,7 +384,10 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!--select 2-->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <!-- Main JS -->
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>
