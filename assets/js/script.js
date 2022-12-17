@@ -79,11 +79,19 @@ $(".image-box").click(function(event) {
 		});
 });
 
-
 $("#activationCode").on("keyup", "input", function () {
   var $field = $(this);
   if ($field.val().length === 1) {
       $field.next().focus();
   }
+});
+
+const input = document.querySelector("[type='tel']");
+intlTelInput(input, {
+    // any initialisation options go here
+    initialCountry: "sa",
+    preferredCountries: [ "sa" ],
+    separateDialCode: true,
+
 });
 

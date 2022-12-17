@@ -14,6 +14,7 @@
       type="text/css"
     />
     <!-- Font Awesome-->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
@@ -43,6 +44,10 @@
       type="text/css"
       media="all"
     />
+    <!-- intl-tel-input -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.css"
+      integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--select 2-->
     <link
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
@@ -105,14 +110,14 @@
     </header>
 
     <main>
-      <div
+      <button
         type="button"
-        class="bg-main btn-frm-owner mb-6"
+        class="btn btn-main border-0 btn-frm-owner mb-6"
         data-bs-toggle="modal"
         data-bs-target="#loginModal"
       >
-        <a href="#">تسجيل الدخول</a>
-      </div>
+        تسجيل الدخول
+      </button>
 
       <!-- Modal Login -->
       <div
@@ -139,12 +144,14 @@
                 <h5 class="fw-bold text-gray my-4">
                   لإنشاء حساب أو تسجيل الدخول، فظلاً أدخل رقم جوالك
                 </h5>
-                <div class="register-input">
-                  <input
-                    type="text"
-                    class="form-control frm-input my-4 register-input"
-                    placeholder="رقم هاتفك الجوال"
-                  />
+                <div class="d-flex justify-content-center">
+                  <div class="col-md-8 my-4">
+                    <input
+                      type="tel"
+                      class="form-control frm-input"
+                      placeholder="رقم هاتفك الجوال"
+                    />
+                  </div>
                 </div>
                 <!-- <div class="text-gray my-3">
                   سوف تتلقى رمز التفعيل برسالة نصية على جوالك ، فضلاً ادخل رمز
@@ -626,6 +633,10 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- intl-tel-input -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"
+      integrity="sha512-kkBkPRO6dSkCJDPNpW4Bb/1Z585gN++HKcIpClQW9IYI+4gk4yPC+eaE3CSQp3Ex+48NvzUvqmroZtR4gZnt4g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!--select 2-->
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>

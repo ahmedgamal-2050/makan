@@ -1,5 +1,6 @@
 :root {
   --m-main: #86b530;
+  --m-main-dark: #5f8813;
   --m-second: #954b1e;
   --m-delete: #e67c73;
   --m-dark: #212121;
@@ -176,6 +177,11 @@ select:focus {
   color: #fff;
 }
 
+.btn-main:hover {
+  background-color: var(--m-main-dark);
+  color: #fff;
+}
+
 .btn-second {
   background-color: var(--m-second);
   border-color: var(--m-second);
@@ -272,6 +278,28 @@ select:focus {
 
 .ws-1 {
   word-spacing: 0.25rem;
+}
+
+.iti {
+  width: 100%;
+}
+
+.iti__selected-flag {
+  outline: 0 !important;
+}
+
+[dir='rtl'] .iti__flag {
+  order: 1 !important;
+}
+
+[dir='rtl'] .iti__arrow {
+  order: 0 !important;
+  margin-left: 0.5rem !important;
+}
+
+[dir='rtl'] .iti__country-list {
+  transform: translateX(90%);
+  direction: ltr;
 }
 
 /********************** header css style ************************/
