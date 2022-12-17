@@ -613,6 +613,12 @@ footer .social-media-link:hover {
   stroke: var(--m-main);
 }
 
+.farm-map-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 124/110;
+}
+
 .farm-img-list {
   width: 100%;
   height: auto;

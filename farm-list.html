@@ -224,10 +224,14 @@
                         مزارع
                     </h4>
                     <div class="col-auto">
-                        <a class="btn-makan btn-main" href="javascript:void(0)">
+                        <button 
+                            type="button" 
+                            class="btn-makan btn-main" 
+                            data-bs-target="#mapModal" 
+                            data-bs-toggle="modal">
                             <em class="fas fa-map"></em>
                             <span>انتقل للخريطة</span>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -2459,6 +2463,105 @@
             </div>
         </section>
     </main>
+
+    <!-- Map Modal -->
+    <div class="modal fade" id="mapModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-light-gray">
+                <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="./assets/images/Icon-close.svg" alt="close icon" />
+                </button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            
+                            <div class="card rounded-3 p-1 mb-2">
+                                <div class="row mb-2">
+                                    <div class="col-auto">
+                                        <img src="https://placehold.co/124x110.png" class="farm-map-img of-cover" alt="image 1">
+                                    </div>
+                                    <div class="col pe-0">
+                                        <h6 class="card-title small fw-bold mb-2">مزرعة شاسعة للاستجمام</h6>
+                                        <div class="col-auto x-small mb-2">كود الإيواء السياحي #206</div>
+                                        <div class="row justify-content-between align-items-center mb-2">
+                                            <div class="col-auto x-small">
+                                                <img src="./assets/images/farm-icons/star.svg" class="" title="star" alt="star" />
+                                                <span class="fw-bold px-1">8.4</span>
+                                                <span>(تقييمات 65)</span>
+                                            </div>
+                                            <div class="col-auto pe-0">
+                                                <button type="button" class="badge rounded-pill border d-flex align-items-center">
+                                                    <img src="./assets/images/farm-icons/material-star.svg" class="" title="material star"
+                                                        alt="material star" />
+                                                    <span class="text-dark x-small pe-1">مميز</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="small">
+                                            <img src="./assets/images/farm-icons/map-pin.svg" class="map-pin-icon" title="map pin" alt="map pin" />
+                                            <span>الرياض, حي العوالي</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between align-items-center small">
+                                    <div class="col-auto">
+                                        <span class="text-main fw-bold h6">1,400</span>
+                                        <span>ريال | ليلة</span>
+                                    </div>
+                                    <div class="col-auto">(المجموع <b>1400</b> ريال)</div>
+                                </div>
+                            </div>
+                            <div class="card rounded-3 p-1 mb-2">
+                                <div class="row mb-2">
+                                    <div class="col-auto">
+                                        <img src="https://placehold.co/124x110.png" class="farm-map-img of-cover" alt="image 1">
+                                    </div>
+                                    <div class="col pe-0">
+                                        <h6 class="card-title small fw-bold mb-2">مزرعة شاسعة للاستجمام</h6>
+                                        <div class="col-auto x-small mb-2">كود الإيواء السياحي #206</div>
+                                        <div class="row justify-content-between align-items-center mb-2">
+                                            <div class="col-auto x-small">
+                                                <img src="./assets/images/farm-icons/star.svg" class="" title="star" alt="star" />
+                                                <span class="fw-bold px-1">8.4</span>
+                                                <span>(تقييمات 65)</span>
+                                            </div>
+                                            <div class="col-auto pe-0">
+                                                <button type="button" class="badge rounded-pill border d-flex align-items-center">
+                                                    <img src="./assets/images/farm-icons/material-star.svg" class="" title="material star"
+                                                        alt="material star" />
+                                                    <span class="text-dark x-small pe-1">مميز</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="small">
+                                            <img src="./assets/images/farm-icons/map-pin.svg" class="map-pin-icon" title="map pin" alt="map pin" />
+                                            <span>الرياض, حي العوالي</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between align-items-center small">
+                                    <div class="col-auto">
+                                        <span class="text-main fw-bold h6">1,400</span>
+                                        <span>ريال | ليلة</span>
+                                    </div>
+                                    <div class="col-auto">(المجموع <b>1400</b> ريال)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 mb-3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
+                                width="100%" 
+                                height="350" 
+                                frameborder="0" 
+                                style="border-radius: 6px; border: 0">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <section class="main-footer bg-dark text-white py-4">
