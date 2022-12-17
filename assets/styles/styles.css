@@ -2,6 +2,7 @@
   --m-main: #86b530;
   --m-main-dark: #5f8813;
   --m-second: #954b1e;
+  --m-second-dark: #70320d;
   --m-delete: #e67c73;
   --m-dark: #212121;
   --m-dark-2: #333333;
@@ -174,17 +175,25 @@ select:focus {
 
 .btn-main {
   background-color: var(--m-main);
+  border-color: var(--m-main);
   color: #fff;
 }
 
 .btn-main:hover {
   background-color: var(--m-main-dark);
+  border-color: var(--m-main-dark);
   color: #fff;
 }
 
 .btn-second {
   background-color: var(--m-second);
   border-color: var(--m-second);
+  color: #fff;
+}
+
+.btn-second:hover {
+  background-color: var(--m-second-dark);
+  border-color: var(--m-second-dark);
   color: #fff;
 }
 
