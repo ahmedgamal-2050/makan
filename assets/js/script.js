@@ -86,12 +86,14 @@ $("#activationCode").on("keyup", "input", function () {
   }
 });
 
-const input = document.querySelector("[type='tel']");
-intlTelInput(input, {
-    // any initialisation options go here
-    initialCountry: "sa",
-    preferredCountries: [ "sa" ],
-    separateDialCode: true,
+/* intlTelInput */
+const allTelInputs = document.querySelectorAll("[type='tel']");
+allTelInputs.forEach((input) => {
+    intlTelInput(input, {
+        initialCountry: "sa",
+        preferredCountries: [ "sa" ],
+        separateDialCode: true,
+    });
+})
 
-});
 
