@@ -27,6 +27,7 @@ html {
   width: 100%;
   min-height: 100vh;
   background-color: var(--m-light-gray) !important;
+  color: var(--m-dark-2);
 }
 
 [dir="rtl"] body {
@@ -122,6 +123,10 @@ select:focus {
   border-color: var(--m-gray-2) !important;
 }
 
+.border-gray-3 {
+  border-color: var(--m-gray-3) !important;
+}
+
 .py-6 {
   padding-block: 5rem;
 }
@@ -205,6 +210,17 @@ select:focus {
 
 .btn-outline-main:hover {
   background-color: var(--m-main);
+  color: #fff;
+}
+
+.btn-outline-second {
+  background-color: transparent;
+  border-color: var(--m-second);
+  color: var(--m-second);
+}
+
+.btn-outline-second:hover {
+  background-color: var(--m-second);
   color: #fff;
 }
 
@@ -631,6 +647,10 @@ footer .social-media-link:hover {
   left: 0;
   top: 0;
   border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.badge-0 {
+  transform: translate(-0.25rem, 0rem);
 }
 
 .badge-1 {
@@ -1387,4 +1407,36 @@ input:focus-visible {
 }
 .register-content>div{
   width: 60%;
+}
+
+.farm-booking-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 178/151;
+}
+
+.current-booking-badge {
+  background-color: #FFE1AE;
+  border: 1px solid #FFB22D;
+}
+
+.calendar {
+  aspect-ratio: 21/19;
+  width: 19px;
+  height: auto;
+}
+
+.logo-sm {
+  width: 45px !important;
+}
+
+.farm-booking-icon {
+  fill: transparent;
+  stroke: var(--m-gray-2);
+}
+
+.farm-booking-heart-icon.farm-booking-icon:hover,
+.farm-booking-heart-icon.farm-booking-icon.active {
+  fill: var(--m-main);
+  stroke: var(--m-main);
 }
