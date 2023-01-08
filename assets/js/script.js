@@ -164,6 +164,17 @@ $(document).ready(function () {
     },
   });
 
+  $("#similar-offers-carousel").owlCarousel({
+    items: 1.25,
+    loop: true,
+    rewind: true,
+    center: true,
+    dots: false,
+    autoplay: false,
+    nav: false,
+    margin: 20,
+  });
+
   $(".farm-img-carousel").each(function () {
     $(this).owlCarousel({
       items: 1,

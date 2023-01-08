@@ -645,16 +645,15 @@ footer .social-media-link:hover {
 .farm-img-carousel .owl-dot,
 .other-img-carousel .owl-dot {
   display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-radius: 2.5px;
-  background-color: #333333bf !important;
-  margin-left: 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: #33333399 !important;
+  margin-left: 0.5rem;
 }
 
 .farm-img-carousel .owl-dot.active,
 .other-img-carousel .owl-dot.active {
-  width: 10px;
   background-color: #fff !important;
 }
 
@@ -784,13 +783,13 @@ footer .social-media-link:hover {
 }
 
 .star-icon {
-  width: 17px;
+  width: 17px !important;
   height: auto;
   aspect-ratio: 17/16;
 }
 
 .map-pin-icon {
-  width: 13px;
+  width: 13px !important;
   height: auto;
   aspect-ratio: 13/16;
 }
@@ -2681,7 +2680,7 @@ input:focus-visible {
     margin-bottom: 2rem !important;
   }
   footer .nav-item {
-    padding-bottom: 10px;
+    padding-bottom: 0.5rem;
   }
 }
 @media (max-width: 578px) {

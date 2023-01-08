@@ -48,6 +48,41 @@
     right: 0;
     transform: translate(-0.5rem, -9rem);
   }
+
+  .rating-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rating-table tbody {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rating-table tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .single-farm-img-md-list {
+    aspect-ratio: 390/245;
+  }
+
+  .farm-img-md-carousel {
+    position: relative;
+    transform: translateY(0.75rem);
+    z-index: 0;
+  }
+
+  .farm-img-carousel.farm-img-md-carousel .owl-dots {
+    transform: translate(44%, -1.5rem);
+  }
+
+  [dir='rtl'] #similar-offers-carousel .card-body {
+    direction: rtl;
+  }
 }
 
 @media (max-width: 576px) {
