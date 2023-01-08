@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Others List | Makan</title>
+    <title>Booking | Makan</title>
     <!-- Droid Arabic Font -->
     <link rel="preconnect" href="https://fontlibrary.org" />
     <link
@@ -212,52 +212,254 @@
                   <em class="fas fa-home text-gray"></em>
                 </a>
               </li>
+              <li class="breadcrumb-item">
+                <a class="text-dark-2" href="javascript:void(0)">
+                  حسابي الشخصي
+                </a>
+              </li>
               <li class="breadcrumb-item text-main" aria-current="page">
-                سياسة الخصوصية
+                حجوزاتي
               </li>
             </ol>
           </nav>
         </div>
       </section>
 
-      <!-- Others Card List -->
-      <section class="mb-4">
-        <div class="container">
-          <div class="card p-lg-5 p-md-5 p-4 rounded-3">
+      <!-- Farm Info -->
+      <section class="mb-5">
+        <div class="container booking-container">
+          <div class="card p-lg-5 p-md-5 p-4 rounded-main">
+            <!-- Title -->
+            <div class="row mb-4">
+              <div class="col-12 d-flex align-items-center">
+                <div class="back-arrow">
+                  <i class="fas fa-arrow-right"> </i>
+                </div>
+                <h4 class="fw-bold">إرسال طلب إلغاء الحجز</h4>
+              </div>
+            </div>
             <div class="row">
-              <div class="col-12 mb-2">
-                <!-- Title -->
-                <h3 class="fw-bold text-second text-center main-mobile-title">
-                  سياسة الخصوصية
+              <div class="col-12">
+                <label for="">
+                  <h3 class="mb-3 text-gray-2 lbl-booking">سبب إلغاء الحجز</h3>
+                </label>
+                <textarea
+                  rows="6"
+                  class="booking-desc"
+                  placeholder="فضلا اذكر سبب الغاء الحجز"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="col-12">
+                <div class="booking-download">
+                  <h5 class="text-gray-2 mb-0">
+                    يمكنك تحميل ملف أو مستند كسبب لإلغاء الحجز
+                  </h5>
+                  <div class="share-link">
+                    <a href="#">
+                      تحميل ملف
+                      <img
+                        src="./assets/images/farm-icons/share.svg"
+                        alt="share"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="col-12">
+                <h3 class="fw-bold text-gray separator">
+                  طريقة استرداد المبلغ
                 </h3>
               </div>
-              <div class="col-12 my-4">
-                <h4 class="fw-bold text-second">شروط الحجز</h4>
-                <p class="fw-bold mb-5 mt-4 lh-2 text-dark-2">
-                  مكان الإقامة وإخبارهم بذلك. وإذا اخفقت في تسجيل الدخول لمكان
-                  الإقامة في يوم الحجز دون إخبارهم بذلك، فقد يتم إلغاء الفترة
-                  المتبقية من حجزك وقد لا تكون مخولاً لاسترداد أموالك، وذلك
-                  وفقاً للشروط والاحكام الخاصة بمكان
-                </p>
-                <h4 class="fw-bold text-second">تغيير أو إلغاء الحجز</h4>
-                <p class="fw-bold mb-5 mt-4 lh-2 text-dark-2">
-                  مكان الإقامة وإخبارهم بذلك. وإذا اخفقت في تسجيل الدخول لمكان
-                  الإقامة في يوم الحجز دون إخبارهم بذلك، فقد يتم إلغاء الفترة
-                  المتبقية من حجزك وقد لا تكون مخولاً لاسترداد أموالك، وذلك
-                  وفقاً للشروط والاحكام الخاصة بمكان
-                </p>
-                <h4 class="fw-bold text-second">في الشاليه/ الاستراحة</h4>
-                <p class="fw-bold mb-5 mt-4 lh-2 text-dark-2">
-                  مكان الإقامة وإخبارهم بذلك. وإذا اخفقت في تسجيل الدخول لمكان
-                  الإقامة في يوم الحجز دون إخبارهم بذلك، فقد يتم إلغاء الفترة
-                  المتبقية من حجزك وقد لا تكون مخولاً لاسترداد أموالك، وذلك
-                  وفقاً للشروط والاحكام الخاصة بمكان
-                </p>
+            </div>
+            <div class="row padding-check my-2">
+              <div class="col-12">
+                <div class="form-check my-2">
+                  <input
+                    class="frm-2-check-input"
+                    type="radio"
+                    name="radio-payment"
+                    id="paymentOne"
+                    checked
+                  />
+                  <label class="frm-2-check-label fw-bold" for="paymentOne">
+                    <h3 class="text-gray">إيداع في محفظة ( مكان ) الإلكترونية</h3>
+                  </label>
+                </div>
+              </div>
+             <div>
+                <hr class="radio-width-hr">
+             </div>
+              <div class="col-12">
+                <div class="form-check my-2">
+                  <input
+                    class="frm-2-check-input"
+                    type="radio"
+                    name="radio-payment"
+                    id="paymentTwo"
+                  />
+                  <label class="frm-2-check-label fw-bold" for="paymentTwo">
+                    <h3 class="text-gray">تحويل إلى حسابك البنكي</h3>
+                  </label>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-6 row align-items-center mb-3">
+                    <label for="" class="label-check col-auto"
+                      >
+                      <h3 class="text-gray">ادخل رقم الايبان</h3> </label
+                    >
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="frm-input payment-input w-100 col"
+                      placeholder="SA "
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <hr class="radio-width-hr">
+             </div>
+             <div class="col-lg-8">
+                <div class="form-check my-2">
+                  <input
+                    class="frm-2-check-input"
+                    type="radio"
+                    name="radio-payment"
+                    id="paymentThree"
+                  />
+                  <label class="frm-2-check-label fw-bold" for="paymentThree">
+                    <h3 class="text-gray">
+                        تحويل إلى محفظتك الإلكترونية المربوطة بجوال رقم
+                        <span class="text-main"> 0561248759</span>
+                    </h3>
+                   
+                  </label>
+                </div>
+              
+              </div>
+              <div class="col-lg-4">
+                <div class="text-center text-gray-2 py-2">
+                  اختر المحفظة
+                </div>
+                <ul class="image-radio-list px-0">
+                    <li><input type="radio" name="test" id="cb1" checked/>
+                      <label for="cb1">
+                        <img src="https://placehold.co/78x78.png" /></label>
+                    </li>
+                    <li><input type="radio" name="test" id="cb2" />
+                      <label for="cb2"><img src="https://placehold.co/78x78.png" /></label>
+                    </li>
+                    <li><input type="radio" name="test" id="cb3" />
+                      <label for="cb3"><img src="https://placehold.co/78x78.png" /></label>
+                    </li>
+                    
+                  </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <hr />
+              </div>
+              <div class="col-12">
+                <h4 class="text-second lh-2">
+                  بعد الرجوع إلى سياسة الإلغاء بعد التأكيد فإنه وفي حال قبول
+                  طلبك سنقوم باسترداد 50% من المبلغ المدفوع في المنصة
+                </h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <hr />
+              </div>
+              <div class="col-12">
+                <h4 class="text-second lh-2">
+                  تعبئة بيانات الطلب وتحديد طريقة استرداد المبلغ لا يعني
+                  بالضرورة قبول الطلب، سنقوم بمراجعة الطلب والرد عليه
+                </h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <hr />
+              </div>
+              <div class="col-12">
+                <div class="position-relative my-4 check-padding">
+                  <input
+                    type="checkbox"
+                    id="checkbox-7"
+                    class="checkbox-inp check-inp"
+                  />
+                  <label
+                    for="checkbox-7"
+                    class="checkbox-lbl fw-bold text-main checkbox-lbl-booking"
+                  >
+                    <h5 class="lh-2 fw-bold">
+                      أقر أني قمت بتعبئة البيانات بشكل صحيح و أنني قد اطلعت على
+                      كل ما ورد في هذا النموذج و أن استرداد المبلغ غير مؤكد، وفي
+                      حال الاسترداد فإني أوافق باسترداد ما قيمته 50% من المبلغ
+                      الذي دفعته في المنصة
+                    </h5>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn-second btn-booking my-3 fw-bold"
+                  data-bs-toggle="modal"
+                      data-bs-target="#cancelBookingModal"
+                >
+                  إرسال
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
+        <!-- cancel booking Modal -->
+        <div
+        class="modal fade modal-custom"
+        id="cancelBookingModal"
+        tabindex="-1"
+        aria-labelledby="cancelBookingModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/images/Icon-close.svg" alt="close icon" />
+            </button>
+            <div class="modal-body confirm-body">
+              <div class="text-center">
+                <div class="confirm-r-icon pt-3">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <h4 class="fw-bold my-4">تم إرسال طلب الإلغاء بنجاح</h4>
+                <p class="pb-3 text-gray">سوف نبلغك فور الرد على الطلب</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn-register btn-main fw-bold">
+                  موافق
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <footer>

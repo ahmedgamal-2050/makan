@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Others List | Makan</title>
+    <title>Rating | Makan</title>
     <!-- Droid Arabic Font -->
     <link rel="preconnect" href="https://fontlibrary.org" />
     <link
@@ -43,16 +43,19 @@
       type="text/css"
       media="all"
     />
-      <!--fancybox-->
-      <link
+    <!--fancybox-->
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
       integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-     <!--select 2-->
-     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!--select 2-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/styles/styles.css" />
   </head>
@@ -212,52 +215,189 @@
                   <em class="fas fa-home text-gray"></em>
                 </a>
               </li>
+              <li class="breadcrumb-item">
+                <a class="text-dark-2" href="javascript:void(0)">
+                  حسابي الشخصي
+                </a>
+              </li>
               <li class="breadcrumb-item text-main" aria-current="page">
-                سياسة الخصوصية
+                حجوزاتي
               </li>
             </ol>
           </nav>
         </div>
       </section>
 
-      <!-- Others Card List -->
-      <section class="mb-4">
-        <div class="container">
-          <div class="card p-lg-5 p-md-5 p-4 rounded-3">
+      <!-- Farm Info -->
+      <section class="mb-5">
+        <div class="container booking-container">
+          <div class="card-rating p-lg-5 p-2 mb-3">
             <div class="row">
-              <div class="col-12 mb-2">
-                <!-- Title -->
-                <h3 class="fw-bold text-second text-center main-mobile-title">
-                  سياسة الخصوصية
-                </h3>
+              <div class="col-lg-6">
+                <div class="cart-single-rate py-3 px-lg-5 px-3 mb-3">
+                  <h6 class="text-dark-2 fz-14">
+                    دقة المعلومات المعلنة من المضيف
+                  </h6>
+                  <div
+                    class="d-flex align-items-center justify-content-center pt-3"
+                  >
+                    <div class="fw-bold text-main h5 mb-0 ps-1">8.2</div>
+                    <div class="text-gray">ممتاز</div>
+                  </div>
+                  <div class="text-center pb-3">
+                    <label class="position-relative w-100">
+                      <div class="progressRate" id="progressRate"></div>
+                      <input
+                        class="rangeRate w-100"
+                        id="rangeRate"
+                        type="range"
+                        max="100"
+                        value="82"
+                      />
+                    </label>
+                  </div>
+                </div>
               </div>
-              <div class="col-12 my-4">
-                <h4 class="fw-bold text-second">شروط الحجز</h4>
-                <p class="fw-bold mb-5 mt-4 lh-2 text-dark-2">
-                  مكان الإقامة وإخبارهم بذلك. وإذا اخفقت في تسجيل الدخول لمكان
-                  الإقامة في يوم الحجز دون إخبارهم بذلك، فقد يتم إلغاء الفترة
-                  المتبقية من حجزك وقد لا تكون مخولاً لاسترداد أموالك، وذلك
-                  وفقاً للشروط والاحكام الخاصة بمكان
-                </p>
-                <h4 class="fw-bold text-second">تغيير أو إلغاء الحجز</h4>
-                <p class="fw-bold mb-5 mt-4 lh-2 text-dark-2">
-                  مكان الإقامة وإخبارهم بذلك. وإذا اخفقت في تسجيل الدخول لمكان
-                  الإقامة في يوم الحجز دون إخبارهم بذلك، فقد يتم إلغاء الفترة
-                  المتبقية من حجزك وقد لا تكون مخولاً لاسترداد أموالك، وذلك
-                  وفقاً للشروط والاحكام الخاصة بمكان
-                </p>
-                <h4 class="fw-bold text-second">في الشاليه/ الاستراحة</h4>
-                <p class="fw-bold mb-5 mt-4 lh-2 text-dark-2">
-                  مكان الإقامة وإخبارهم بذلك. وإذا اخفقت في تسجيل الدخول لمكان
-                  الإقامة في يوم الحجز دون إخبارهم بذلك، فقد يتم إلغاء الفترة
-                  المتبقية من حجزك وقد لا تكون مخولاً لاسترداد أموالك، وذلك
-                  وفقاً للشروط والاحكام الخاصة بمكان
-                </p>
+              <div class="col-lg-6">
+                <div class="cart-single-rate py-3 px-lg-5 px-3 mb-3">
+                  <h6 class="text-dark-2 fz-14">نظافة المكان</h6>
+                  <div
+                    class="d-flex align-items-center justify-content-center pt-3"
+                  >
+                    <div class="fw-bold text-main h5 mb-0 ps-1">8.2</div>
+                    <div class="text-gray">ممتاز</div>
+                  </div>
+                  <div class="text-center pb-3">
+                    <label class="position-relative w-100">
+                      <div class="progressRate" id="progressRate"></div>
+                      <input
+                        class="rangeRate w-100"
+                        id="rangeRate"
+                        type="range"
+                        max="100"
+                        value="82"
+                      />
+                    </label>
+                  </div>
+                </div>
               </div>
+              <div class="col-lg-6">
+                <div class="cart-single-rate py-3 px-lg-5 px-3 mb-3">
+                  <h6 class="text-dark-2 fz-14">خدمة المضيف و استقباله</h6>
+                  <div
+                    class="d-flex align-items-center justify-content-center pt-3"
+                  >
+                    <div class="fw-bold text-main h5 mb-0 ps-1">8.2</div>
+                    <div class="text-gray">ممتاز</div>
+                  </div>
+                  <div class="text-center pb-3">
+                    <label class="position-relative w-100">
+                      <div class="progressRate" id="progressRate"></div>
+                      <input
+                        class="rangeRate w-100"
+                        id="rangeRate"
+                        type="range"
+                        max="100"
+                        value="82"
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="cart-single-rate py-3 px-lg-5 px-3 mb-3">
+                  <h6 class="text-dark-2 fz-14">خدمة المضيف و استقباله</h6>
+                  <div
+                    class="d-flex align-items-center justify-content-center pt-3"
+                  >
+                    <div class="fw-bold text-main h5 mb-0 ps-1">8.2</div>
+                    <div class="text-gray">ممتاز</div>
+                  </div>
+                  <div class="text-center pb-3">
+                    <label class="position-relative w-100">
+                      <div class="progressRate" id="progressRate"></div>
+                      <input
+                        class="rangeRate w-100"
+                        id="rangeRate"
+                        type="range"
+                        max="100"
+                        value="82"
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-lg-4 d-flex align-items-center justify-content-between"
+              >
+                <div class="text-gray-3">التقييم العام</div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <div class="fw-bold text-main h5 mb-0 ps-1">8.2</div>
+                  <div class="text-gray">ممتاز</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="" class="mb-3 text-gray-2 fz-14">أضف تعليق </label>
+              <textarea
+                rows="6"
+                class="rating-description p-3 fz-14"
+                placeholder="أضف تعليقا"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn-main btn-rating my-3 fw-bold"
+                data-bs-toggle="modal"
+                data-bs-target="#ratingModal"
+              >
+                إرسال
+              </button>
             </div>
           </div>
         </div>
       </section>
+        <!-- rating Modal -->
+        <div
+        class="modal fade modal-custom modal-height-mobile"
+        id="ratingModal"
+        tabindex="-1"
+        aria-labelledby="ratingModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="close-modal"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/images/Icon-close.svg" alt="close icon" />
+            </button>
+            <div class="modal-body confirm-body">
+              <div class="text-center">
+                <div class="confirm-r-icon pt-3">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <h4 class="fw-bold my-4 text-dark-2">تم إرسال تقييمك بنجاح</h4>
+              </div>
+              <div class="d-flex justify-content-center pt-4">
+                <button type="button" class="btn-register btn-main fw-bold">
+                  موافق
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
