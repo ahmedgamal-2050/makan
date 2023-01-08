@@ -1,0 +1,35 @@
+:root {
+  --m-main: #86b530;
+  --m-main-dark: #5f8813;
+  --m-second: #954b1e;
+  --m-second-dark: #70320d;
+  --m-delete: #e67c73;
+  --m-dark: #212121;
+  --m-dark-2: #333333;
+  --m-darker: #161616;
+  --m-gray: #7f7f7f;
+  --m-gray-2: #5b5b5b;
+  --m-gray-3: #d2d2d2;
+  --m-light-gray: #eeeeee;
+  --m-off-white: #f5f5f5;
+  --m-red: #ff0000;
+  --rounded-main: 1rem;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 778px) {
+}
+
+@media (max-width: 578px) {
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 380px) {
+}
