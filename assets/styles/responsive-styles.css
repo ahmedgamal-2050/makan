@@ -34,10 +34,19 @@
     border-radius: 1rem 1rem 0px 0px;
   }
 
-  .farm-like {
+  .owl-carousel:not(.other-img-carousel) .farm-like {
     right: unset;
     left: 0;
     transform: translate(1rem, 1rem);
+  }
+  
+  .other-img-carousel .owl-nav button.owl-prev {
+    transform: translate(0.5rem, -9rem);
+  }
+
+  .other-img-carousel .owl-nav button.owl-next {
+    right: 0;
+    transform: translate(-0.5rem, -9rem);
   }
 }
 

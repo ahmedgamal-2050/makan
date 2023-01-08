@@ -601,11 +601,13 @@ footer .social-media-link:hover {
   outline: 0;
 }
 
-.farm-img-carousel .owl-nav {
+.farm-img-carousel .owl-nav,
+.other-img-carousel .owl-nav {
   position: relative;
 }
 
-.farm-img-carousel .owl-nav button {
+.farm-img-carousel .owl-nav button,
+.other-img-carousel .owl-nav button {
   background-color: #fff !important;
   opacity: 0.8;
   height: 32px;
@@ -620,16 +622,19 @@ footer .social-media-link:hover {
   color: var(--m-dark-2) !important;
 }
 
-.farm-img-carousel .owl-nav button.owl-prev {
+.farm-img-carousel .owl-nav button.owl-prev,
+.other-img-carousel .owl-nav button.owl-prev {
   transform: translate(0.5rem, -7.5rem);
 }
 
-.farm-img-carousel .owl-nav button.owl-next {
+.farm-img-carousel .owl-nav button.owl-next,
+.other-img-carousel .owl-nav button.owl-next {
   right: 0;
   transform: translate(-0.5rem, -7.5rem);
 }
 
-.farm-img-carousel .owl-dots {
+.farm-img-carousel .owl-dots,
+.other-img-carousel .owl-dots {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -637,7 +642,8 @@ footer .social-media-link:hover {
   transform: translate(44%, -0.5rem);
 }
 
-.farm-img-carousel .owl-dot {
+.farm-img-carousel .owl-dot,
+.other-img-carousel .owl-dot {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -646,7 +652,8 @@ footer .social-media-link:hover {
   margin-left: 0.25rem;
 }
 
-.farm-img-carousel .owl-dot.active {
+.farm-img-carousel .owl-dot.active,
+.other-img-carousel .owl-dot.active {
   width: 10px;
   background-color: #fff !important;
 }
@@ -2712,7 +2719,8 @@ input:focus-visible {
   .search-container {
     width: 90%;
   }
-  .card-favourite .farm-img-carousel .owl-nav {
+  .card-favourite .farm-img-carousel .owl-nav,
+  .card-favourite .other-img-carousel .owl-nav {
     display: none;
   }
   .booking-container h3,

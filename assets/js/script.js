@@ -185,6 +185,21 @@ $(document).ready(function () {
       },
     });
   });
+
+  $(".other-img-carousel").each(function () {
+    $(this).owlCarousel({
+      items: 1,
+      loop: true,
+      rewind: true,
+      dots: true,
+      autoplay: true,
+      navText: [
+        '<i class="fas fa-chevron-left" aria-hidden="true"></i>',
+        '<i class="fas fa-chevron-right" aria-hidden="true"></i>',
+      ],
+      nav: true,
+    });
+  });
 });
 $(".frm-select").select2();
 
