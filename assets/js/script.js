@@ -155,7 +155,7 @@ $(document).ready(function () {
       0: {
         items: 1.5,
       },
-      767: {
+      768: {
         items: 2.5,
       },
       992: {
@@ -171,11 +171,18 @@ $(document).ready(function () {
       rewind: true,
       dots: true,
       autoplay: true,
-      nav: true,
       navText: [
         '<i class="fas fa-chevron-left" aria-hidden="true"></i>',
         '<i class="fas fa-chevron-right" aria-hidden="true"></i>',
       ],
+      responsive: {
+        0: {
+          nav: false,
+        },
+        768: {
+          nav: true,
+        },
+      },
     });
   });
 });
