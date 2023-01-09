@@ -71,6 +71,9 @@ $('[data-fancybox="gallery"]').fancybox({
   buttons: ["zoom", "fullScreen", "share", "close"],
   loop: true,
   protect: true,
+  afterLoad: function (instance , current) {
+    current.$content.append('<div class="bg-danger p-5 w-100">test icon</div>');
+  }
 });
 
 /*chat in mobile */
