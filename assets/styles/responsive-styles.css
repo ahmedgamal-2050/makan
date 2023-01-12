@@ -16,6 +16,18 @@
   --rounded-main: 1rem;
 }
 
+@media (max-width: 1920px) {
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1366px) {
+}
+
 @media (max-width: 1200px) {
   .search-header select {
     font-size: 14px;
@@ -519,6 +531,41 @@
   }
   .booking-details .border-left {
     border-left: none;
+  }
+
+  .rating-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rating-table tbody {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rating-table tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .single-farm-img-md-list {
+    aspect-ratio: 390/245;
+  }
+
+  .farm-img-md-carousel {
+    position: relative;
+    transform: translateY(0.75rem);
+    z-index: 0;
+  }
+
+  .farm-img-carousel.farm-img-md-carousel .owl-dots {
+    transform: translate(44%, -1.5rem);
+  }
+
+  [dir='rtl'] #similar-offers-carousel .card-body {
+    direction: rtl;
   }
 }
 @media (max-width: 768px) {
