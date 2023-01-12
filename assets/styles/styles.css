@@ -2276,6 +2276,9 @@ font-size: 12px;
 background: #EEEEEE;
 border-radius: 15px;
 }
+.notify-farm-list{
+  top: 50px;
+}
 .offer-btn{
   width: 136px;
 height: 40px;
