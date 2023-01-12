@@ -991,7 +991,9 @@ border-radius: 15px;
   }
 }
 @media (max-width: 380px) {
- 
+  .search-container select {
+    font-size: 12px;
+}
   .outline-border {
     padding-inline: 15px;
   }
