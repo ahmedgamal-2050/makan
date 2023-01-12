@@ -66,16 +66,6 @@ $(window).on("resize", function () {
 });
 // close side menu over 992px end
 
-// Fancybox gallary
-$('[data-fancybox="gallery"]').fancybox({
-  buttons: ["zoom", "fullScreen", "share", "close"],
-  loop: true,
-  protect: true,
-  afterLoad: function (instance , current) {
-    current.$content.append('<div class="bg-danger p-5 w-100">test icon</div>');
-  }
-});
-
 /*chat in mobile */
 jQuery(document).ready(function () {
   $(".chat-list a").click(function () {
@@ -270,3 +260,44 @@ function RadioContentPrices() {
 }
 /*read only radio buttons in profile page */
 $(".my-account-page :radio:not(:checked)").attr("disabled", true);
+
+/*notifications */
+$(".notifications").click(function () {
+  $(".box-notifications").toggle();
+});
+$(".close-btn-notify").click(function () {
+  $(".box-notifications").hide();
+});
+// gallary
+function openModal() {
+  document.getElementById("gallaryModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("gallaryModal").style.display = "none";
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  const slides = document.getElementsByClassName("mySlides-gallary");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "flex";
+}

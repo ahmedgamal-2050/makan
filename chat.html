@@ -43,15 +43,6 @@
       type="text/css"
       media="all"
     />
-
-    <!--fancybox-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
-      integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <!--select 2-->
     <link
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
@@ -70,22 +61,15 @@
           <div class="row justify-content-between align-items-center my-4">
             <div class="col-auto text-center">
               <p class="mb-2 small text-gray">Book-Makan.com</p>
-              <img class="logo" src="./assets/images/makan-new-logo.png" />
+              <img
+                loading="lazy"
+                class="logo"
+                src="./assets/images/makan-new-logo.png"
+              />
             </div>
-            <div class="col px-5">
+            <div class="col px-5 position-relative">
               <div class="row g-0 bg-white p-4 shadow rounded-3 header-row">
                 <nav class="col-8 navbar navbar-expand-lg navbar-light">
-                  <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="nav">
                       <a class="nav-link" href="javascript:void(0)"
@@ -100,32 +84,148 @@
                   </div>
                 </nav>
                 <div class="col-4">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn rounded-pill btn-second">
+                  <div class="d-flex header-btns align-items-center">
+                    <a
+                      href="./others-list.html"
+                      class="py-2 px-4 rounded-pill btn-second text-white d-flex align-items-center justify-content-center"
+                    >
                       عروض مكان
-                    </button>
+                    </a>
                     <div class="d-flex">
-                    <div class="chat-boxs ms-3">
-                      <img
-                        src="./assets/images/header-nav-icons/chatboxes.svg"
-                        alt="chat icon"
-                      />
+                      <a class="chat-boxs ms-3" href="./chat.html">
+                        <img
+                          loading="lazy"
+                          src="./assets/images/header-nav-icons/chatboxes.svg"
+                          alt="chat icon"
+                        />
+                      </a>
+                      <button class="notifications">
+                        <img
+                          loading="lazy"
+                          src="./assets/images/header-nav-icons/notifications.svg"
+                          alt="notifications icon"
+                        />
+                        <span class="new-notify"></span>
+                      </button>
                     </div>
-                    <div class="notifications">
-                      <img
-                        src="./assets/images/header-nav-icons/notifications.svg"
-                        alt="notifications icon"
-                      />
-                      <span class="new-notify"></span>
-                    </div>
-                  </div>
                   </div>
                 </div>
+              </div>
+              <div class="box-notifications ms-5 p-3 bg-white">
+                <div class="d-flex justify-content-start align-items-center">
+                  <img
+                    src="./assets/images/black-close.svg"
+                    alt="close"
+                    class="cursor close-btn-notify"
+                  />
+                </div>
+                <div class="d-flex justify-content-center my-2">
+                  <div
+                    class="fw-bold fz-14 notify-date text-gray-2 d-flex justify-content-center align-items-center"
+                  >
+                    الاحد 14 فبراير 2023
+                  </div>
+                </div>
+                <ul class="notifications-list ps-0">
+                  <li class="p-3 new-notify">
+                    <a href="#">
+                      <p class="mb-0 text-gray">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                        أليايت,سيت دو أيوسمود تيمبور
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3">
+                    <a href="#">
+                      <p class="mb-0 text-gray">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                        أليايت,سيت دو أيوسمود تيمبور
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3 new-notify">
+                    <a href="#">
+                      <p class="mb-0 text-gray">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                        أليايت,سيت دو أيوسمود تيمبور
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3">
+                    <a href="#">
+                      <p class="mb-0 text-gray">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                        أليايت,سيت دو أيوسمود تيمبور
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3">
+                    <a href="#">
+                      <p class="mb-0 text-gray">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                        أليايت,سيت دو أيوسمود تيمبور
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="d-flex justify-content-center my-2">
+                  <div
+                    class="fw-bold fz-14 notify-date text-gray-2 d-flex justify-content-center align-items-center"
+                  >
+                    الاحد 14 فبراير 2023
+                  </div>
+                </div>
+                <ul class="notifications-list ps-0">
+                  <li class="p-3 new-notify">
+                    <a href="#">
+                      <p class="mb-0 text-gray">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                        أليايت,سيت دو أيوسمود تيمبور
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3">
+                    <a href="#">
+                      <p class="mb-0 text-gray">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                        أليايت,سيت دو أيوسمود تيمبور
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3 new-notify">
+                    <a href="#">
+                      <p class="mb-0 text-gray">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                        أليايت,سيت دو أيوسمود تيمبور
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3">
+                    <a href="#">
+                      <p class="mb-0 text-gray">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                        أليايت,سيت دو أيوسمود تيمبور
+                      </p>
+                    </a>
+                  </li>
+                  <li class="p-3">
+                    <a href="#">
+                      <p class="mb-0 text-gray">
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                        أليايت,سيت دو أيوسمود تيمبور
+                      </p>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="col-auto d-flex flex-column">
               <button class="btn-makan btn-main mb-2">
-                <img class="user-icon" src="./assets/images/user-icon.svg" />
+                <img
+                  loading="lazy"
+                  class="user-icon"
+                  src="./assets/images/user-icon.svg"
+                />
                 الدخول او تسجيل حساب
               </button>
               <button class="btn-makan btn-outline-main">أضف عقارك</button>
@@ -150,25 +250,28 @@
             <div class="header-logo pe-2 pt-3">
               <a class="" href="#">
                 <img
+                  loading="lazy"
                   src="./assets/images/makan-new-logo.png"
                   alt="logo"
                   class="img-logo-mobile"
                 />
-                <p class="mt-1 small text-gray">Book-Makan.com</p>
+                <p class="mt-1 small text-gray txt-logo">Book-Makan.com</p>
               </a>
             </div>
           </div>
           <div
-            class="col-md-3 col-sm-3 col-5 d-flex justify-content-around align-items-center"
+            class="col-md-3 col-sm-3 col-5 d-flex justify-content-end align-items-center"
           >
-            <div class="chat-boxs">
+            <a class="chat-boxs ms-3" href="./chat.html">
               <img
+                loading="lazy"
                 src="./assets/images/header-nav-icons/chatboxes.svg"
                 alt="chat icon"
               />
-            </div>
+            </a>
             <div class="notifications">
               <img
+                loading="lazy"
                 src="./assets/images/header-nav-icons/notifications.svg"
                 alt="notifications icon"
               />
@@ -176,9 +279,121 @@
             </div>
           </div>
         </div>
+        <div class="container-notify position-relative">
+          <div class="box-notifications p-3 bg-white">
+            <div class="d-flex justify-content-start align-items-center">
+              <img
+                src="./assets/images/black-close.svg"
+                alt="close"
+                class="cursor close-btn-notify"
+              />
+            </div>
+            <div>
+              <div class="d-flex justify-content-center my-2">
+                <div
+                  class="fw-bold fz-14 notify-date text-gray-2 d-flex justify-content-center align-items-center"
+                >
+                  الاحد 14 فبراير 2023
+                </div>
+              </div>
+              <ul class="notifications-list ps-0">
+                <li class="p-3 new-notify">
+                  <a href="#">
+                    <p class="mb-0 text-gray">
+                      لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                      أليايت,سيت دو أيوسمود تيمبور
+                    </p>
+                  </a>
+                </li>
+                <li class="p-3">
+                  <a href="#">
+                    <p class="mb-0 text-gray">
+                      لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                      أليايت,سيت دو أيوسمود تيمبور
+                    </p>
+                  </a>
+                </li>
+                <li class="p-3 new-notify">
+                  <a href="#">
+                    <p class="mb-0 text-gray">
+                      لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                      أليايت,سيت دو أيوسمود تيمبور
+                    </p>
+                  </a>
+                </li>
+                <li class="p-3">
+                  <a href="#">
+                    <p class="mb-0 text-gray">
+                      لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                      أليايت,سيت دو أيوسمود تيمبور
+                    </p>
+                  </a>
+                </li>
+                <li class="p-3">
+                  <a href="#">
+                    <p class="mb-0 text-gray">
+                      لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                      أليايت,سيت دو أيوسمود تيمبور
+                    </p>
+                  </a>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center my-2">
+                <div
+                  class="fw-bold fz-14 notify-date text-gray-2 d-flex justify-content-center align-items-center"
+                >
+                  الاحد 14 فبراير 2023
+                </div>
+              </div>
+              <ul class="notifications-list ps-0">
+                <li class="p-3 new-notify">
+                  <a href="#">
+                    <p class="mb-0 text-gray">
+                      لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                      أليايت,سيت دو أيوسمود تيمبور
+                    </p>
+                  </a>
+                </li>
+                <li class="p-3">
+                  <a href="#">
+                    <p class="mb-0 text-gray">
+                      لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                      أليايت,سيت دو أيوسمود تيمبور
+                    </p>
+                  </a>
+                </li>
+                <li class="p-3 new-notify">
+                  <a href="#">
+                    <p class="mb-0 text-gray">
+                      لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                      أليايت,سيت دو أيوسمود تيمبور
+                    </p>
+                  </a>
+                </li>
+                <li class="p-3">
+                  <a href="#">
+                    <p class="mb-0 text-gray">
+                      لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                      أليايت,سيت دو أيوسمود تيمبور
+                    </p>
+                  </a>
+                </li>
+                <li class="p-3">
+                  <a href="#">
+                    <p class="mb-0 text-gray">
+                      لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج
+                      أليايت,سيت دو أيوسمود تيمبور
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
-    <div class="side-menu-wrap ">
+     <!-- Mobile Side Menu -->
+    <div class="side-menu-wrap">
       <nav class="side-menu-nav">
         <ul
           class="main-menu d-flex flex-column flex-lg-row align-items-lg-center list-unstyled p-0 m-0"
@@ -203,11 +418,21 @@
         <div class="row">
           <div class="side-menu-btns-box w-100 d-flex justify-content-center">
             <div class="col-10">
-              <button class="mb-3 side-menu-btns w-100 d-flex align-items-center justify-content-center btn-main">
-                <img class="user-icon" src="./assets/images/user-icon.svg" />
+              <button
+                class="mb-3 side-menu-btns w-100 d-flex align-items-center justify-content-center btn-main"
+              >
+                <img
+                  loading="lazy"
+                  class="user-icon"
+                  src="./assets/images/user-icon.svg"
+                />
                 الدخول او تسجيل حساب
               </button>
-              <button class="side-menu-btns w-100 d-flex align-items-center justify-content-center btn-main">أضف عقارك</button>
+              <button
+                class="side-menu-btns w-100 d-flex align-items-center justify-content-center btn-main"
+              >
+                أضف عقارك
+              </button>
             </div>
           </div>
         </div>
@@ -274,6 +499,7 @@
                           <div class="d-flex align-items-center p-2">
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/59x59.png"
                                 alt="user img"
@@ -283,6 +509,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="12"
                                     class="mt-1"
@@ -309,6 +536,7 @@
                           <div class="d-flex align-items-center p-2">
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/59x59.png"
                                 alt="user img"
@@ -318,6 +546,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="12"
                                     class="mt-1"
@@ -344,6 +573,7 @@
                           <div class="d-flex align-items-center p-2">
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/59x59.png"
                                 alt="user img"
@@ -353,6 +583,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="12"
                                     class="mt-1"
@@ -379,6 +610,7 @@
                           <div class="d-flex align-items-center p-2">
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/59x59.png"
                                 alt="user img"
@@ -388,6 +620,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="12"
                                     class="mt-1"
@@ -414,6 +647,7 @@
                           <div class="d-flex align-items-center p-2">
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/59x59.png"
                                 alt="user img"
@@ -423,6 +657,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="12"
                                     class="mt-1"
@@ -449,6 +684,7 @@
                           <div class="d-flex align-items-center p-2">
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/59x59.png"
                                 alt="user img"
@@ -458,6 +694,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="12"
                                     class="mt-1"
@@ -484,6 +721,7 @@
                           <div class="d-flex align-items-center p-2">
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/59x59.png"
                                 alt="user img"
@@ -493,6 +731,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="12"
                                     class="mt-1"
@@ -519,6 +758,7 @@
                           <div class="d-flex align-items-center p-2">
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/59x59.png"
                                 alt="user img"
@@ -528,6 +768,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="12"
                                     class="mt-1"
@@ -554,6 +795,7 @@
                           <div class="d-flex align-items-center p-2">
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/59x59.png"
                                 alt="user img"
@@ -563,6 +805,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="12"
                                     class="mt-1"
@@ -602,6 +845,7 @@
                           >
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/47x47.png"
                                 alt="user img"
@@ -611,6 +855,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="15"
                                     class="mt-1"
@@ -657,7 +902,11 @@
                             </div>
                             <div class="col-2">
                               <div class="delete-chat-mobile delete-chat-list">
-                               <img src="./assets/images/delete-forever.svg" alt="delete chat">
+                                <img
+                                  loading="lazy"
+                                  src="./assets/images/delete-forever.svg"
+                                  alt="delete chat"
+                                />
                               </div>
                             </div>
                           </div>
@@ -675,6 +924,7 @@
                           >
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/47x47.png"
                                 alt="user img"
@@ -684,6 +934,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="15"
                                     class="mt-1"
@@ -730,7 +981,11 @@
                             </div>
                             <div class="col-2">
                               <div class="delete-chat-mobile delete-chat-list">
-                               <img src="./assets/images/delete-forever.svg" alt="delete chat">
+                                <img
+                                  loading="lazy"
+                                  src="./assets/images/delete-forever.svg"
+                                  alt="delete chat"
+                                />
                               </div>
                             </div>
                           </div>
@@ -748,6 +1003,7 @@
                           >
                             <div class="ms-2">
                               <img
+                                loading="lazy"
                                 class="img-fluid rounded-3"
                                 src="https://placehold.co/47x47.png"
                                 alt="user img"
@@ -757,6 +1013,7 @@
                               <div>
                                 <span>
                                   <img
+                                    loading="lazy"
                                     src="./assets/images/farm-icons/star.svg"
                                     height="15"
                                     class="mt-1"
@@ -803,7 +1060,11 @@
                             </div>
                             <div class="col-2">
                               <div class="delete-chat-mobile delete-chat-list">
-                               <img src="./assets/images/delete-forever.svg" alt="delete chat">
+                                <img
+                                  loading="lazy"
+                                  src="./assets/images/delete-forever.svg"
+                                  alt="delete chat"
+                                />
                               </div>
                             </div>
                           </div>
@@ -814,7 +1075,6 @@
                           </span>
                         </div>
                       </a>
-                      
                     </div>
                     <!-- chat-list -->
                   </div>
@@ -831,6 +1091,7 @@
                           </span>
                           <div class="ms-2">
                             <img
+                              loading="lazy"
                               class="img-fluid rounded-3"
                               src="https://placehold.co/47x47.png"
                               alt="user img"
@@ -840,6 +1101,7 @@
                             <div>
                               <span>
                                 <img
+                                  loading="lazy"
                                   src="./assets/images/farm-icons/star.svg"
                                   height="12"
                                   class="mt-1"
@@ -860,7 +1122,11 @@
                           </div>
                         </div>
                         <div class="delete-chat-mobile">
-                          <img src="./assets/images/delete-forever.svg" alt="delete chat">
+                          <img
+                            loading="lazy"
+                            src="./assets/images/delete-forever.svg"
+                            alt="delete chat"
+                          />
                         </div>
                       </div>
                       <div class="col-lg-4 col-12 d-flex align-items-center">
@@ -921,7 +1187,11 @@
                       <div class="mt-2 chat-btns">
                         <button type="button" class="btn-main">
                           تحميل ملف
-                          <img src="./assets/images/Icon-share.svg" alt="" />
+                          <img
+                            loading="lazy"
+                            src="./assets/images/Icon-share.svg"
+                            alt=""
+                          />
                         </button>
                         <button type="button" class="btn-second">
                           <i class="fa fa-paper-plane" aria-hidden="true"></i>
@@ -947,7 +1217,11 @@
             <div
               class="col-lg-auto col-md-6 col-sm-6 ps-5 col-4 reverse-order-mobile-1"
             >
-              <img class="logo mt-5" src="./assets/images/makan-new-logo.png" />
+              <img
+                loading="lazy"
+                class="logo mt-5"
+                src="./assets/images/makan-new-logo.png"
+              />
             </div>
 
             <div
@@ -1072,13 +1346,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
-    ></script>
-    <!--fancybox-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
-      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     ></script>
     <!--select 2-->
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
