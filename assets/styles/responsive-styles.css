@@ -79,9 +79,6 @@
   .web-view {
     display: none !important;
   }
-  .mobile-view {
-    display: block !important;
-  }
   .text-center-mobile{text-align: center;}
   /*mobile nav*/
   .header-mobile {
@@ -706,6 +703,27 @@
     color: #fff;
     font-size: 24px;
   }
+  .share-links-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0;
+    box-shadow: -1px 2px 6px #00000029;
+    border: 1px solid #e8e8e8;
+  }
+  .share-links-mobile .communication-link {
+    width: 30%;
+    height: 34px;
+    color: #ffffff;
+    font-size: 1rem;
+    background: var(--m-second);
+    border-radius: 30px;
+  }
+  .share-links-mobile .communication-link i {
+    color: #fff;
+    font-size: 24px;
+  }
   .booking-details .border-left {
     border-left: none;
   }
@@ -746,8 +764,10 @@
   }
   .mySlides-gallary img {
     width: 90%;
-    height: 522px;
-}
+    height: 60vh;
+    object-fit: contain;
+    -o-object-fit: contain;
+  }
 .prev-gallary-slide, .next-gallary-slide {
   bottom: 10%;
   top: unset;
@@ -991,7 +1011,9 @@ border-radius: 15px;
   }
 }
 @media (max-width: 380px) {
- 
+  .search-container select {
+    font-size: 12px;
+}
   .outline-border {
     padding-inline: 15px;
   }

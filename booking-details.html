@@ -499,15 +499,18 @@
                       alt=""
                     />
                   </div>
-                  <div
+                  <button
                     class="outline-border d-flex align-items-center justify-content-center"
+                    data-bs-toggle="modal"
+                    data-bs-target="#shareLinksMobileModal"
+                    type="button"
                   >
                     <img
                       loading="lazy"
                       src="./assets/images/download.svg"
                       alt=""
                     />
-                  </div>
+                  </button>
                 </div>
                 <div
                   class="outline-border d-flex align-items-center justify-content-center"
@@ -1097,6 +1100,47 @@
         </div>
       </div>
     </div>
+    <!-- share links in mobile -->
+    <div class="modal fade" id="shareLinksMobileModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog m-0 p-0">
+        <div class="modal-content">
+          <div class="share-links-mobile p-2">
+            <div class="modal-header p-0 py-2 mb-2">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <p class="fz-14 text-gray-2 text-center ms-auto mb-0">مشاركة على</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-around py-2">
+              <div>
+                <a href="javascript:void(0)">
+                  <i class="fab fa-facebook-messenger"></i>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:void(0)">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:void(0)">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:void(0)">
+                  <i class="fas fa-copy"></i>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center pt-3">
+              <button type="button" class="btn btn-sm rounded-pill col-6 btn-second">
+                إلغاء
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- JQuery-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
